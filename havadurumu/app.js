@@ -49,9 +49,9 @@ function weatherBalloon(cityID) {
       cityGet.innerHTML = celcius + `<small>&#160;°C</small>`;
       country.innerHTML = data.sys.country;
       // description.innerHTML = data.weather[0].icon;
-      ruzgar.innerHTML = data.wind.speed + `<small>&#160;km/s</small>`;
+      ruzgar.innerHTML =  `<small>Rüzgar ( Wind ): </small>` + data.wind.speed + `<small>&#160;km/s</small>`;
 
-      bulut.innerHTML = data.weather[0].description;
+      bulut.innerHTML = `<small>Hava ( Temp ): </small>` + data.weather[0].description;
     })
     .catch(function () {
       //   msg.textContent = "Please search for a valid city 😩";
